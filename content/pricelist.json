@@ -58,8 +58,32 @@
     },
     {
       "_block": "category",
+      "title": "Background"
+    },
+    {
+      "_block": "price",
+      "title": "Simple",
+      "usd": 10
+    },
+    {
+      "_block": "price",
+      "title": "Detailed",
+      "usd": 20
+    },
+    {
+      "_block": "category",
       "title": "Extras"
+    },
+    {
+      "_block": "percent",
+      "title": "+1 additional character",
+      "percent": 50
+    },
+    {
+      "_block": "price",
+      "title": "Complex clothing / accessories",
+      "usd": 5
     }
   ],
-  "terms": "..."
+  "terms": "*   Prices may vary depending on **complexity**, **clothing details**, **background**, or **number of characters**.\n    \n*   I don’t draw humanoid characters.\n    \n*   You’ll receive progress updates during the sketch stage.\n    \n*   Completion time: 3–10 days depending on the queue and complexity."
 }
