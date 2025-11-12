@@ -8,7 +8,7 @@ content:
     filename: "{primary}.json"
     format: "json"
     view:
-      fields: [ title, date ]
+      fields: [ title_ru, date ]
       primary: title_en
       sort: [ date ]
       default:
@@ -34,10 +34,13 @@ content:
         label: "Описание (РУ)"
         type: text
   - name: status
-    label: "Статус заказов"
+    label: "Заказы: {primary}"
     type: file
     path: "content/status.json"
     format: "json"
+    view:
+      fields: [ isOpen, message_ru ]
+      primary: isOpen
     fields:
       - name: isOpen
         label: "Заказы открыты"
