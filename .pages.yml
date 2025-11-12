@@ -76,7 +76,7 @@ content:
     format: "json"
     view: 
       fields: [ position, value ]
-      sort: [ value:desc ]
+      sort: [ value ]
       primary: position
       layout: tree
     fields:
