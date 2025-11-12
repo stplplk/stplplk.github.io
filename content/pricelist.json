@@ -1,75 +1,8 @@
 {
-  "categories": [
-    {
-      "_block": "pricelist",
-      "title_en": "Headshot",
-      "title_ru": "Хэд",
-      "prices": [
-        {
-          "_block": "price",
-          "title_en": "Simple Shaded",
-          "title_ru": "Простые тени",
-          "usd": 15
-        },
-        {
-            "_block": "price",
-            "title_en": "Full Shaded",
-            "title_ru": "Сложные тени",
-            "usd": 20
-        }
-      ]
-    },
-    {
-        "_block": "pricelist",
-        "title_en": "Halfbody",
-        "title_ru": "Halfbody",
-        "prices": [
-          {
-            "_block": "price",
-            "title_en": "Simple Shaded",
-            "title_ru": "Простые тени",
-            "usd": 20
-          },
-          {
-              "_block": "price",
-              "title_en": "Full Shaded",
-              "title_ru": "Сложные тени",
-              "usd": 25
-          }
-        ]
-      },
-      {
-        "_block": "pricelist",
-        "title_en": "Fullbody",
-        "title_ru": "Fullbody",
-        "prices": [
-          {
-            "_block": "price",
-            "title_en": "Simple Shaded",
-            "title_ru": "Простые тени",
-            "usd": 30
-          },
-          {
-              "_block": "price",
-              "title_en": "Full Shaded",
-              "title_ru": "Сложные тени",
-              "usd": 35
-          }
-        ]
-      },
-      {
-        "_block": "pricelist",
-        "title_en": "Reference Sheet",
-        "title_ru": "Reference Sheet",
-        "prices": [
-          {
-            "_block": "price",
-            "title_en": "",
-            "title_ru": "",
-            "usd": 50
-          }
-        ]
-      }
-  ],
+  "prices": {
+    "_block": "price",
+    "title": "Тест",
+    "usd": 5
+  },
   "terms": "..."
 }
