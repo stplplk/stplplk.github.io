@@ -1,7 +1,7 @@
 media: "media"
 
 content:
-  - name: portfolio
+  - name: arts
     label: "Арты"
     type: collection
     path: "content/portfolio"
