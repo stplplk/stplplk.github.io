@@ -72,7 +72,7 @@ content:
     label: "Прайсы"
     type: collection
     path: "content/prices"
-    filename: "{primary}/{year}-{month}-{day}-{hour}-{minute}-{second}.json"
+    filename: "{year}-{month}-{day}-{hour}-{minute}-{second}-{primary}.json"
     format: "json"
     view: 
       fields: [ position, value ]
