@@ -60,7 +60,6 @@ content:
         label: "Прайсы"
         type: block
         list: true
-        blockKey: title
         blocks:
           - name: price
             label: "Прайс"
