@@ -1,8 +1,16 @@
 {
-    "socials": [
-        {
-            "_block": "social",
-            "link": "test"
-        }
-    ]
+  "socials": [
+    {
+      "_block": "social",
+      "link": "https://t.me/Stlopik"
+    },
+    {
+      "_block": "social",
+      "link": "https://bsky.app/profile/stplplk.bsky.social"
+    },
+    {
+      "_block": "social",
+      "link": "https://www.furaffinity.net/user/s.t.e.p.h.4.n"
+    }
+  ]
 }
