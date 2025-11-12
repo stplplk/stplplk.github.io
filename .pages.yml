@@ -76,11 +76,9 @@ content:
     format: "json"
     view: 
       fields: [ position, value ]
+      primary: position
       layout: tree
     fields:
-      - name: category
-        label: "Категория"
-        type: string
       - name: position
         label: "Позиция"
         type: string
