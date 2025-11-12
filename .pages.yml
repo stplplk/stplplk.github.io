@@ -1,0 +1,33 @@
+media: files/media
+
+content:
+  - name: portfolio
+    label: "Портфолио"
+    type: collection
+    path: "content/portfolio"
+    format: "json"
+    view:
+      fields: [ title, date ]
+      sort: [ date ]
+      default:
+        sort: date
+        order: desc
+    fields:
+      - name: image
+        label: "Изображение"
+        type: image
+      - name: title_en
+        label: "Название (EN)"
+        type: string
+      - name: title_ru
+        label: "Название (РУ)"
+        type: string
+      - name: description_en
+        label: "Описание (EN)"
+        type: text
+      - name: description_ru
+        label: "Описание (РУ)"
+        type: text
+      - name: date
+        label: "Дата"
+        type: date
