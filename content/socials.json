@@ -2,15 +2,28 @@
   "socials": [
     {
       "_block": "social",
+      "title": "ТГ для связи",
+      "link": "https://t.me/stplplk"
+    },
+    {
+      "_block": "social",
+      "title": "ТГ Канал",
       "link": "https://t.me/Stlopik"
     },
     {
       "_block": "social",
+      "title": "BSky",
       "link": "https://bsky.app/profile/stplplk.bsky.social"
     },
     {
       "_block": "social",
+      "title": "FA",
       "link": "https://www.furaffinity.net/user/s.t.e.p.h.4.n"
+    },
+    {
+      "_block": "social",
+      "title": "Discord",
+      "link": "https://discord.com/users/522694314405658624"
     }
   ]
 }
