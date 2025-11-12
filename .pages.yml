@@ -69,7 +69,7 @@ content:
         label: "Комментарий (РУ)"
         type: text
   - name: pricelist
-    label: "Прайс лист"
+    label: "Прайсы"
     type: file
     path: "content/pricelist.json"
     format: "json"
