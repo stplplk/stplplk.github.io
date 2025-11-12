@@ -65,6 +65,9 @@ content:
           - name: pricelist
             label: "Прайсы"
             fields:
+              - name: title
+                label: "Категория"
+                type: string
               - name: prices
                 label: "Прайсы"
                 type: block
