@@ -2,7 +2,7 @@ media: "media"
 
 content:
   - name: portfolio
-    label: "Работы"
+    label: "Арты"
     type: collection
     path: "content/portfolio"
     filename: "{year}-{month}-{day}-{primary}.json"
