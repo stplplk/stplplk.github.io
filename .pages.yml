@@ -50,6 +50,40 @@ content:
       - name: message_ru
         label: "Комментарий (РУ)"
         type: text
+  - name: pricelist
+    label: "Прайс лист"
+    type: file
+    path: "content/pricelist.json"
+    format: "json"
+    fields:
+      - name: categories
+        label: "Категории"
+        type: block
+        list: true
+        blocks:
+          - name: prices
+            label: "Прайсы"
+            fields:
+              - name: prices
+                label: "Прайсы"
+                type: block
+                list: true
+                blocks:
+                  - name: price
+                    label: "Прайс"
+                    fields:
+                      - name: title_en
+                        label: "Позиция (EN)"
+                        type: string
+                      - name: title_ru
+                        label: "Позиция (РУ)"
+                        type: string
+                      - name: usd
+                        label: "$"
+                        type: number
+      - name: terms
+        label: "Terms"
+        type: rich-text
   - name: orders
     label: "Заказы"
     type: collection
