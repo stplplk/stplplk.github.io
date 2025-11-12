@@ -65,8 +65,11 @@ content:
           - name: pricelist
             label: "Прайсы"
             fields:
-              - name: title
-                label: "Категория"
+              - name: title_en
+                label: "Категория (EN)"
+                type: string
+              - name: title_ru
+                label: "Категория (РУ)"
                 type: string
               - name: prices
                 label: "Прайсы"
