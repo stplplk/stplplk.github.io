@@ -52,7 +52,7 @@ content:
         options:
           values: [ "В очереди", "В работе", "Готов" ]
   - name: status
-    label: "Приём заказов"
+    label: "Заказы (вкл/выкл)"
     type: file
     path: "content/status.json"
     format: "json"
