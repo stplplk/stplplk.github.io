@@ -5,7 +5,7 @@ content:
     label: "Арты"
     type: collection
     path: "content/portfolio"
-    filename: "{year}-{month}-{day}-{primary}.json"
+    filename: "{year}-{month}-{day}-{hour}-{minute}-{second}-{primary}.json"
     format: "json"
     view:
       fields: [ image, title_ru, date ]
@@ -37,7 +37,7 @@ content:
     label: "Заказы"
     type: collection
     path: "content/orders"
-    filename: "{year}-{month}-{day}-{primary}.json"
+    filename: "{year}-{month}-{day}-{hour}-{minute}-{second}-{primary}.json"
     format: "json"
     fields:
       - name: client
@@ -68,44 +68,64 @@ content:
       - name: message_ru
         label: "Комментарий (РУ)"
         type: text
-  - name: pricelist
+  - name: prices
     label: "Прайсы"
-    type: file
-    path: "content/pricelist.json"
+    type: collection
+    path: "content/prices"
+    filename: "{primary}/{year}-{month}-{day}-{hour}-{minute}-{second}.json"
     format: "json"
+    view: 
+      fields: [ category, position, value ]
+      layout: tree
     fields:
-      - name: terms
-        label: "Terms"
-        type: rich-text
-      - name: prices
-        label: "Прайсы"
-        type: block
-        list: true
-        blocks:
-          - name: price
-            label: "Прайс"
-            fields:
-              - name: title
-                label: "Позиция"
-                type: string
-              - name: usd
-                label: "$"
-                type: number
-          - name: percent
-            label: "Процент"
-            fields:
-              - name: title
-                label: "Позиция"
-                type: string
-              - name: percent
-                label: "%"
-                type: number
-          - name: category
-            label: "Категория"
-            fields:
-              - name: title
-                label: "Название"
-                type: string
+      - name: category
+        label: "Категория"
+        type: string
+      - name: position
+        label: "Позиция"
+        type: string
+      - name: value
+        label: "Цена"
+        type: string
+    
+  # - name: pricelist
+  #   label: "Прайсы"
+  #   type: file
+  #   path: "content/pricelist.json"
+  #   format: "json"
+  #   fields:
+  #     - name: terms
+  #       label: "Terms"
+  #       type: rich-text
+  #     - name: prices
+  #       label: "Прайсы"
+  #       type: block
+  #       list: true
+  #       blocks:
+  #         - name: price
+  #           label: "Прайс"
+  #           fields:
+  #             - name: title
+  #               label: "Позиция"
+  #               type: string
+  #             - name: usd
+  #               label: "$"
+  #               type: number
+  #         - name: percent
+  #           label: "Процент"
+  #           fields:
+  #             - name: title
+  #               label: "Позиция"
+  #               type: string
+  #             - name: percent
+  #               label: "%"
+  #               type: number
+  #         - name: category
+  #           label: "Категория"
+  #           fields:
+  #             - name: title
+  #               label: "Название"
+  #               type: string
   - name: socials
     label: "Соцсети"
     type: file
