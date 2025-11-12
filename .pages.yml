@@ -58,7 +58,7 @@ content:
     format: "json"
     fields:
       - name: isOpen
-        label: "Заказы открыты"
+        label: "Открыть заказы"
         type: boolean
         required: true
         default: false
