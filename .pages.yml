@@ -8,7 +8,7 @@ content:
     filename: "{year}-{month}-{day}-{primary}.json"
     format: "json"
     view:
-      fields: [ title_ru, date ]
+      fields: [ image, title_ru, date ]
       primary: title_en
       sort: [ date ]
       default:
