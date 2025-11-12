@@ -1,8 +1,4 @@
 {
-  "prices": {
-    "_block": "price",
-    "title": "1",
-    "usd": 1
-  },
+  "prices": [],
   "terms": "..."
 }
