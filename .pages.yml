@@ -83,7 +83,7 @@ content:
         default: false
       - name: message
         label: "Комментарий"
-        type: text
+        type: rich-text
   - name: socials
     label: "Соцсети"
     type: file
