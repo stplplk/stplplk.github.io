@@ -74,6 +74,9 @@ content:
     path: "content/pricelist.json"
     format: "json"
     fields:
+      - name: terms
+        label: "Terms"
+        type: rich-text
       - name: prices
         label: "Прайсы"
         type: block
@@ -103,6 +106,3 @@ content:
               - name: title
                 label: "Название"
                 type: string
-      - name: terms
-        label: "Terms"
-        type: rich-text
