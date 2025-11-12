@@ -81,11 +81,8 @@ content:
         type: boolean
         required: true
         default: false
-      - name: message_en
-        label: "Комментарий (EN)"
-        type: text
-      - name: message_ru
-        label: "Комментарий (РУ)"
+      - name: message
+        label: "Комментарий"
         type: text
   - name: socials
     label: "Соцсети"
