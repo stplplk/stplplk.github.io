@@ -60,7 +60,7 @@ content:
         label: "Категории"
         type: block
         list: true
-        requred: false
+        required: false
         blocks:
           - name: pricelist
             label: "Прайсы"
