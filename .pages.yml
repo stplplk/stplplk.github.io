@@ -59,6 +59,7 @@ content:
       - name: prices
         label: "Прайсы"
         type: block
+        array: true
         blocks:
           - name: price
             label: "Прайс"
