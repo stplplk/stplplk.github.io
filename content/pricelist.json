@@ -1,10 +1,18 @@
 {
-    "categories": [
-      {
-        "prices": [
-          { "title_en": "Headshot", "title_ru": "Портрет", "usd": 6 }
-        ]
-      }
-    ],
-    "terms": "..."
-  }
+  "categories": [
+    {
+      "_block": "pricelist",
+      "title_en": "Headshot",
+      "title_ru": "Хэд",
+      "prices": [
+        {
+          "_block": "price",
+          "title_en": "Simple Shaded",
+          "title_ru": "Простые тени",
+          "usd": 15
+        }
+      ]
+    }
+  ],
+  "terms": "..."
+}
