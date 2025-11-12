@@ -1,4 +1,65 @@
 {
-  "prices": [],
+  "prices": [
+    {
+      "_block": "category",
+      "title": "Headshot"
+    },
+    {
+      "_block": "price",
+      "title": "Simple Shaded",
+      "usd": 15
+    },
+    {
+      "_block": "price",
+      "title": "Full Shaded",
+      "usd": 20
+    },
+    {
+      "_block": "category",
+      "title": "Halfbody"
+    },
+    {
+      "_block": "price",
+      "title": "Simple Shaded",
+      "usd": 20
+    },
+    {
+      "_block": "price",
+      "title": "Full Shaded",
+      "usd": 25
+    },
+    {
+      "_block": "category",
+      "title": "Fullbody"
+    },
+    {
+      "_block": "price",
+      "title": "Simple Shaded",
+      "usd": 30
+    },
+    {
+      "_block": "price",
+      "title": "Full Shaded",
+      "usd": 35
+    },
+    {
+      "_block": "category",
+      "title": "Reference Sheet"
+    },
+    {
+      "_block": "price",
+      "title": "Ref.Sheet",
+      "usd": 50
+    },
+    {
+      "_block": "price",
+      "title": "+1 additional expression",
+      "usd": 4
+    },
+    {
+      "_block": "category",
+      "title": "Extras"
+    }
+  ],
   "terms": "..."
 }
