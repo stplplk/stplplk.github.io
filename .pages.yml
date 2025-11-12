@@ -120,6 +120,9 @@ content:
           - name: social
             label: "Соцсеть"
             fields:
+              - name: title
+                label: "Название"
+                type: string
               - name: link
                 label: "Ссылка"
                 type: string
