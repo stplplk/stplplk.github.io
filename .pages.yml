@@ -106,3 +106,20 @@ content:
               - name: title
                 label: "Название"
                 type: string
+  - name: socials
+    label: "Соцсети"
+    type: file
+    path: "content/socials.json"
+    format: "json"
+    fields:
+      - name: socials
+        label: "Соцсети"
+        type: block
+        list: true
+        blocks:
+          - name: social
+            label: "Соцсеть"
+            fields:
+              - name: link
+                label: "Ссылка"
+                type: string
