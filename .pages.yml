@@ -33,6 +33,24 @@ content:
       - name: description_ru
         label: "Описание (РУ)"
         type: text
+  - name: orders
+    label: "Заказы"
+    type: collection
+    path: "content/orders"
+    filename: "{year}-{month}-{day}-{primary}.json"
+    format: "json"
+    fields:
+      - name: client
+        label: "Заказчик"
+        type: string
+      - name: date
+        label: "Дата создания"
+        type: date
+      - name: status
+        label: "Статус"
+        type: select
+        options:
+          values: [ "В очереди", "В работе", "Готов" ]
   - name: status
     label: "Приём заказов"
     type: file
@@ -70,65 +88,21 @@ content:
               - name: usd
                 label: "$"
                 type: number
+          - name: percent
+            label: "Процент"
+            fields:
+              - name: title
+                label: "Позиция"
+                type: string
+              - name: percent
+                label: "%"
+                type: number
           - name: category
             label: "Категория"
             fields:
               - name: title
                 label: "Название"
                 type: string
-
-    # fields:
-    #   - name: categories
-    #     label: "Категории"
-    #     type: block
-    #     list: true
-    #     default: []
-        # blocks:
-        #   - name: pricelist
-        #     label: "Прайсы"
-        #     fields:
-        #       - name: title_en
-        #         label: "Категория (EN)"
-        #         type: string
-        #       - name: title_ru
-        #         label: "Категория (РУ)"
-        #         type: string
-        #       - name: prices
-        #         label: "Прайсы"
-        #         type: block
-        #         list: true
-        #         default: []
-        #         blocks:
-        #           - name: price
-        #             label: "Прайс"
-        #             fields:
-        #               - name: title_en
-        #                 label: "Позиция (EN)"
-        #                 type: string
-        #               - name: title_ru
-        #                 label: "Позиция (РУ)"
-        #                 type: string
-        #               - name: usd
-        #                 label: "$"
-        #                 type: number
       - name: terms
         label: "Terms"
         type: rich-text
-  - name: orders
-    label: "Заказы"
-    type: collection
-    path: "content/orders"
-    filename: "{year}-{month}-{day}-{primary}.json"
-    format: "json"
-    fields:
-      - name: client
-        label: "Заказчик"
-        type: string
-      - name: date
-        label: "Дата создания"
-        type: date
-      - name: status
-        label: "Статус"
-        type: select
-        options:
-          values: [ "В очереди", "В работе", "Готов" ]
