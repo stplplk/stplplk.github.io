@@ -61,7 +61,7 @@ content:
         type: block
         list: true
         blocks:
-          - name: prices
+          - name: pricelist
             label: "Прайсы"
             fields:
               - name: prices
