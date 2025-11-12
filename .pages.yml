@@ -5,11 +5,11 @@ content:
     label: "Арты"
     type: collection
     path: "content/portfolio"
-    filename: "{year}-{month}-{day}-{hour}-{minute}-{second}-{primary}.json"
+    filename: "{primary}.json"
     format: "json"
     view:
-      fields: [ image, title_ru, date ]
-      primary: title_en
+      fields: [ image, title, date ]
+      primary: title
       sort: [ date ]
       default:
         sort: date
@@ -21,30 +21,49 @@ content:
       - name: date
         label: "Дата"
         type: date
-      - name: title_en
-        label: "Название (EN)"
+      - name: title
+        label: "Название"
         type: string
-      - name: title_ru
-        label: "Название (РУ)"
+      - name: description
+        label: "Описание"
+        type: rich-text
+  - name: prices
+    label: "Прайсы"
+    type: collection
+    path: "content/prices"
+    filename: "{primary}.json"
+    format: "json"
+    view: 
+      fields: [ position, value ]
+      primary: position
+      layout: tree
+      default:
+        sort: value
+        order: desc
+    fields:
+      - name: position
+        label: "Позиция"
         type: string
-      - name: description_en
-        label: "Описание (EN)"
-        type: text
-      - name: description_ru
-        label: "Описание (РУ)"
-        type: text
+      - name: value
+        label: "Цена"
+        type: string
   - name: orders
     label: "Заказы"
     type: collection
     path: "content/orders"
-    filename: "{year}-{month}-{day}-{hour}-{minute}-{second}-{primary}.json"
+    filename: "{year}-{month}-{day}-{primary}.json"
     format: "json"
+    view:
+      fields: [ client, date, status ]
+      primary: client
+      default:
+        sort: status
     fields:
       - name: client
         label: "Заказчик"
         type: string
       - name: date
-        label: "Дата создания"
+        label: "Дата"
         type: date
       - name: status
         label: "Статус"
@@ -68,62 +87,6 @@ content:
       - name: message_ru
         label: "Комментарий (РУ)"
         type: text
-  - name: prices
-    label: "Прайсы"
-    type: collection
-    path: "content/prices"
-    filename: "{primary}.json"
-    format: "json"
-    view: 
-      fields: [ position, value ]
-      primary: position
-      layout: tree
-    fields:
-      - name: position
-        label: "Позиция"
-        type: string
-      - name: value
-        label: "Цена"
-        type: string
-    
-  # - name: pricelist
-  #   label: "Прайсы"
-  #   type: file
-  #   path: "content/pricelist.json"
-  #   format: "json"
-  #   fields:
-  #     - name: terms
-  #       label: "Terms"
-  #       type: rich-text
-  #     - name: prices
-  #       label: "Прайсы"
-  #       type: block
-  #       list: true
-  #       blocks:
-  #         - name: price
-  #           label: "Прайс"
-  #           fields:
-  #             - name: title
-  #               label: "Позиция"
-  #               type: string
-  #             - name: usd
-  #               label: "$"
-  #               type: number
-  #         - name: percent
-  #           label: "Процент"
-  #           fields:
-  #             - name: title
-  #               label: "Позиция"
-  #               type: string
-  #             - name: percent
-  #               label: "%"
-  #               type: number
-  #         - name: category
-  #           label: "Категория"
-  #           fields:
-  #             - name: title
-  #               label: "Название"
-  #               type: string
   - name: socials
     label: "Соцсети"
     type: file
