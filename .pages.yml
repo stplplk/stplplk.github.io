@@ -75,7 +75,7 @@ content:
     filename: "{primary}/{year}-{month}-{day}-{hour}-{minute}-{second}.json"
     format: "json"
     view: 
-      fields: [ category, position, value ]
+      fields: [ position, value ]
       layout: tree
     fields:
       - name: category
