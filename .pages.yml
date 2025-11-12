@@ -5,9 +5,11 @@ content:
     label: "Портфолио"
     type: collection
     path: "content/portfolio"
+    filename: "{primary}.json"
     format: "json"
     view:
       fields: [ title, date ]
+      primary: title_en
       sort: [ date ]
       default:
         sort: date
@@ -30,4 +32,21 @@ content:
         type: text
       - name: description_ru
         label: "Описание (РУ)"
+        type: text
+  - name: status
+    label: "Статус заказов"
+    type: file
+    path: "content/status.json"
+    format: "json"
+    fields:
+      - name: isOpen
+        label: "Заказы открыты"
+        type: boolean
+        required: true
+        default: false
+      - name: message_en
+        label: "Комментарий (EN)"
+        type: text
+      - name: message_ru
+        label: "Комментарий (РУ)"
         type: text
