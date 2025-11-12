@@ -1,5 +1,3 @@
-media: files/media
-
 content:
   - name: portfolio
     label: "Портфолио"
@@ -16,6 +14,9 @@ content:
       - name: image
         label: "Изображение"
         type: image
+      - name: date
+        label: "Дата"
+        type: date
       - name: title_en
         label: "Название (EN)"
         type: string
@@ -28,6 +29,3 @@ content:
       - name: description_ru
         label: "Описание (РУ)"
         type: text
-      - name: date
-        label: "Дата"
-        type: date
