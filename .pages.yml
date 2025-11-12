@@ -1,3 +1,5 @@
+media: "media"
+
 content:
   - name: portfolio
     label: "Портфолио"
