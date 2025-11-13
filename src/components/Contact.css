@@ -1,0 +1,84 @@
+.contact {
+    display: block;
+    position: relative;
+    text-align: center;
+    line-height: 48px;
+    background: #fffa;
+    font-family: "MainFont";
+    font-size: 24px;
+    text-decoration: none;
+    color: #222;
+    border-bottom: 1px solid #0002;
+    transition: transform .2s;
+}
+
+.contact .icon {
+    width: 24px;
+    height: 24px;
+    margin-bottom: -4px;
+    margin-right: 8px;
+}
+
+.contact:nth-of-type(2n) {
+    transform: rotate(2deg);
+}
+
+.contact:nth-of-type(2n+1) {
+    transform: rotate(-1deg);
+}
+
+.contact::before {
+    content: "";
+    display: block;
+    background: #fffa;
+    width: 8px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -8px;
+    clip-path: polygon(
+        100% 0%,
+        0% 16%,
+        100% 32%,
+        0% 50%,
+        100% 68%,
+        0% 84%,
+        100% 100%
+    );
+}
+
+.contact::after {
+    content: "";
+    display: block;
+    background: #fffa;
+    width: 8px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: -8px;
+    clip-path: polygon(
+        0% 0%,
+        100% 16%,
+        0% 32%,
+        100% 50%,
+        0% 68%,
+        100% 84%,
+        0% 100%
+    );
+}
+
+.contact:hover {
+    transform: scaleX(1.1);
+}
+
+.contact:active {
+    transform: scale(.9);
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    max-width: min(calc(100% - 16px), 300px);
+    margin: 0 auto;
+}

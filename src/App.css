@@ -1,3 +1,11 @@
 html {
     background: #6CF8FF radial-gradient(circle at 0 0, #6CF8FF 0%, #ADFFD7 100%);
 }
+
+@font-face {
+    font-family: "MainFont";
+    src: url("/fonts/Gill Sans.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
