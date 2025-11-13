@@ -1,0 +1,7 @@
+.badge {
+    text-align: center;
+}
+
+.badge > svg {
+    transform: rotate(11deg);
+}
