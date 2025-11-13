@@ -3,5 +3,14 @@
 }
 
 .badge > svg {
-    transform: rotate(11deg);
+    transform: rotateZ(11deg);
+    transition: transform .3s;
+}
+
+.badge > svg:hover {
+    transform: perspective(20cm) rotateX(30deg);
+}
+
+.badge > svg:active {
+    transform: scale(.9);
 }
