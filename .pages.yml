@@ -73,20 +73,31 @@ content:
       - name: terms
         label: "Terms"
         type: rich-text
-      - name: prices
-        label: "Прайсы"
+      - name: categories
+        label: "Категории"
         type: block
         list: true
         blocks:
-          - name: price
-            label: "Прайс"
-            fields:
-              - name: title
-                label: "Позиция"
-                type: string
-              - name: value
-                label: "Цена"
-                type: string
+         - name: category
+           label: "Категория"
+           fields:
+             - name: name
+               label: "Категория"
+               type: string
+             - name: items
+               label: "Позиции"
+               type: block
+               list: true
+               blocks:
+                 - name: item
+                   label: "Позиция"
+                   fields:
+                     - name: title
+                       label: "Название"
+                       type: string
+                     - name: value
+                       label: "Цена"
+                       type: string
   - name: socials
     label: "Соцсети"
     type: file
