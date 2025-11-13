@@ -1,35 +1,21 @@
 {
-    "terms": "...",
-    "categories": [
-      {
-        "name": "Illustrations",
-        "items": [
-          { "title": "Headshot", "value": "$50" },
-          { "title": "Halfbody", "value": "$80" },
-          { "title": "Fullbody", "value": "$120" }
-        ]
-      },
-      {
-        "name": "Reference Sheets",
-        "items": [
-          { "title": "Simple Ref Sheet", "value": "$150" },
-          { "title": "Complex Ref Sheet", "value": "$220" }
-        ]
-      },
-      {
-        "name": "Badges",
-        "items": [
-          { "title": "Digital Badge", "value": "$40" },
-          { "title": "Fullbody Badge", "value": "$70" }
-        ]
-      },
-      {
-        "name": "Add-ons",
-        "items": [
-          { "title": "Extra Character", "value": "+60%" },
-          { "title": "Detailed Background", "value": "$40–$90" },
-          { "title": "NSFW", "value": "+20%" }
-        ]
-      }
-    ]
-  }
+  "terms": "...",
+  "categories": [
+    {
+      "_block": "category",
+      "name": "Headshot",
+      "items": [
+        {
+          "_block": "item",
+          "title": "Simple Shaded",
+          "value": "$ 15"
+        },
+        {
+          "_block": "item",
+          "title": "Full Shaded",
+          "value": "$ 20"
+        }
+      ]
+    }
+  ]
+}
