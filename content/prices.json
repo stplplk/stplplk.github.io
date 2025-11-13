@@ -1,5 +1,5 @@
 {
-  "terms": "...",
+  "terms": "*   Prices may vary depending on **complexity**, **clothing details**, **background**, or **number of characters**.\n    \n*   I don’t draw humanoid characters.\n    \n*   You’ll receive progress updates during the sketch stage.\n    \n*   Completion time: 3–10 days depending on the queue and complexity.",
   "categories": [
     {
       "_block": "category",
@@ -14,6 +14,86 @@
           "_block": "item",
           "title": "Full Shaded",
           "value": "$ 20"
+        }
+      ]
+    },
+    {
+      "_block": "category",
+      "name": "Halfbody",
+      "items": [
+        {
+          "_block": "item",
+          "title": "Simple Shaded",
+          "value": "$ 20"
+        },
+        {
+          "_block": "item",
+          "title": "Full Shaded",
+          "value": "$ 25"
+        }
+      ]
+    },
+    {
+      "_block": "category",
+      "name": "Fullbody",
+      "items": [
+        {
+          "_block": "item",
+          "title": "Simple Shaded",
+          "value": "$ 30"
+        },
+        {
+          "_block": "item",
+          "title": "Full Shaded",
+          "value": "$ 35"
+        }
+      ]
+    },
+    {
+      "_block": "category",
+      "name": "Reference Sheet",
+      "items": [
+        {
+          "_block": "item",
+          "title": "Reference Sheet",
+          "value": "$ 50"
+        },
+        {
+          "_block": "item",
+          "title": "+1 extra expression",
+          "value": "$ 4"
+        }
+      ]
+    },
+    {
+      "_block": "category",
+      "name": "Background",
+      "items": [
+        {
+          "_block": "item",
+          "title": "Simple",
+          "value": "$ 10"
+        },
+        {
+          "_block": "item",
+          "title": "Detailed",
+          "value": "$ 20"
+        }
+      ]
+    },
+    {
+      "_block": "category",
+      "name": "Extras",
+      "items": [
+        {
+          "_block": "item",
+          "title": "+1 extra character",
+          "value": "+ 50%"
+        },
+        {
+          "_block": "item",
+          "title": "Complex clothing / accessories",
+          "value": "5 $"
         }
       ]
     }
