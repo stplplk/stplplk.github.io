@@ -1,3 +1,9 @@
 {
-    "prices": []
+    "prices": [
+        {
+            "_block": "price",
+            "title": "test",
+            "value": "$ 20"  
+        }
+    ]
 }
