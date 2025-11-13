@@ -1,10 +1,10 @@
-media: "media"
+media: "public/media"
 
 content:
   - name: arts
     label: "Арты"
     type: collection
-    path: "content/portfolio"
+    path: "src/content/portfolio"
     filename: "{primary}.json"
     format: "json"
     view:
@@ -30,7 +30,7 @@ content:
   - name: orders
     label: "Заказы"
     type: collection
-    path: "content/orders"
+    path: "src/content/orders"
     filename: "{year}-{month}-{day}-{primary}.json"
     format: "json"
     view:
@@ -53,7 +53,7 @@ content:
   - name: status
     label: "Заказы (вкл/выкл)"
     type: file
-    path: "content/status.json"
+    path: "src/content/status.json"
     format: "json"
     fields:
       - name: isOpen
@@ -101,7 +101,7 @@ content:
   - name: socials
     label: "Соцсети"
     type: file
-    path: "content/socials.json"
+    path: "src/content/socials.json"
     format: "json"
     fields:
       - name: socials
