@@ -67,7 +67,7 @@ content:
   - name: prices
     label: "Прайсы"
     type: file
-    path: "content/prices.json"
+    path: "src/content/prices.json"
     format: "json"
     fields:
       - name: terms
