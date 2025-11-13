@@ -27,26 +27,6 @@ content:
       - name: description
         label: "Описание"
         type: rich-text
-  - name: prices
-    label: "Прайсы"
-    type: collection
-    path: "content/prices"
-    filename: "{primary}.json"
-    format: "json"
-    view: 
-      fields: [ position, value ]
-      primary: position
-      layout: tree
-      default:
-        sort: value
-        order: desc
-    fields:
-      - name: position
-        label: "Позиция"
-        type: string
-      - name: value
-        label: "Цена"
-        type: string
   - name: orders
     label: "Заказы"
     type: collection
@@ -84,6 +64,61 @@ content:
       - name: message
         label: "Комментарий"
         type: rich-text
+  - name: prices
+    label: "Прайсы"
+    type: file
+    path: "content/prices.json"
+    format: "json"
+    fields:
+      - name: prices
+        label: "Прайсы"
+        type: block
+        list: true
+        default: []
+        blocks:
+          - name: price
+            label: "Прайс"
+            fields:
+              - name: title
+                label: "Позиция"
+                type: string
+              - name: value
+                label: "Цена"
+                type: string
+    # fields:
+    #   - name: categories
+    #     label: "Категории"
+    #     type: block
+    #     list: true
+    #     default: []
+        # blocks:
+        #   - name: pricelist
+        #     label: "Прайсы"
+        #     fields:
+        #       - name: title_en
+        #         label: "Категория (EN)"
+        #         type: string
+        #       - name: title_ru
+        #         label: "Категория (РУ)"
+        #         type: string
+        #       - name: prices
+        #         label: "Прайсы"
+        #         type: block
+        #         list: true
+        #         default: []
+        #         blocks:
+        #           - name: price
+        #             label: "Прайс"
+        #             fields:
+        #               - name: title_en
+        #                 label: "Позиция (EN)"
+        #                 type: string
+        #               - name: title_ru
+        #                 label: "Позиция (РУ)"
+        #                 type: string
+        #               - name: usd
+        #                 label: "$"
+        #                 type: number 
   - name: socials
     label: "Соцсети"
     type: file
