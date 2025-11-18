@@ -27,7 +27,9 @@ function HomePage() {
                     />
                 )) }
             </div>
-            <Price />
+            <div className="center">
+                <Price />
+            </div>
         </div>
     )
 }
