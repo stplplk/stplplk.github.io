@@ -1,11 +1,13 @@
+:root {
+    --contact-bg: #fffa;
+}
+
 .contact {
-    display: block;
-    position: relative;
     text-align: center;
     line-height: 48px;
-    background: #fffa;
+    background: var(--contact-bg);
     font-family: "MainFont";
-    font-size: 24px;
+    font-size: 22px;
     text-decoration: none;
     color: #222;
     border-bottom: 1px solid #0002;
@@ -27,14 +29,16 @@
     transform: rotate(-1deg);
 }
 
-.contact::before {
+.contact::before,
+.contact::after {
     content: "";
-    display: block;
-    background: #fffa;
+    background: var(--contact-bg);
     width: 8px;
     height: 100%;
     position: absolute;
-    top: 0;
+}
+
+.contact::before {
     left: -8px;
     clip-path: polygon(
         100% 0%,
@@ -48,13 +52,6 @@
 }
 
 .contact::after {
-    content: "";
-    display: block;
-    background: #fffa;
-    width: 8px;
-    height: 100%;
-    position: absolute;
-    top: 0;
     right: -8px;
     clip-path: polygon(
         0% 0%,
@@ -77,8 +74,9 @@
 
 .contacts {
     display: flex;
+    padding-bottom: 32px;
     flex-direction: column;
     gap: 8px;
-    max-width: min(calc(100% - 16px), 300px);
+    width: min(calc(100% - 16px), 300px);
     margin: 0 auto;
 }

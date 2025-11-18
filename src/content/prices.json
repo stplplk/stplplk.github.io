@@ -88,12 +88,12 @@
         {
           "_block": "item",
           "title": "+1 extra character",
-          "value": "+ 50%"
+          "value": "+50 %"
         },
         {
           "_block": "item",
           "title": "Complex clothing / accessories",
-          "value": "+5 $"
+          "value": "$ 5"
         }
       ]
     }

@@ -1,13 +1,14 @@
 import { useState, useEffect } from "react";
 import Badge from "../components/Badge";
 import Contact from "../components/Contact";
+import Price from "../components/Price";
 
 interface Contact {
     title: string;
     link: string;
 }
 
-function Home() {
+function HomePage() {
     const [contacts, setContacts] = useState<Contact[]>([]);
 
     useEffect(() => void import("../content/socials.json")
@@ -26,8 +27,9 @@ function Home() {
                     />
                 )) }
             </div>
+            <Price />
         </div>
     )
 }
 
-export default Home;
+export default HomePage;
