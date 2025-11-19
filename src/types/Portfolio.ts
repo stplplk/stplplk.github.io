@@ -1,5 +1,6 @@
 interface PortfolioItem {
     image: string;
+    description: string;
     date: string;
     title: string;
 }

@@ -21,6 +21,43 @@ ul {
     font-display: swap;
 }
 
+.gallery-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.gallery-item {
+    background: #fff;
+    padding: 16px;
+    border-radius: 16px;
+    box-shadow: inset 4px 4px 8px -4px #0002,
+                      2px 2px 16px 2px #0004;
+    text-decoration: none;
+    color: #000;
+    transition: transform 0.3s;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+}
+
+.gallery-item:active {
+    transform: scale(0.95);
+}
+
+.gallery-item img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.gallery-grid p {
+    margin: 0;
+}
+
 .center {
     display: flex;
     flex-direction: column;
