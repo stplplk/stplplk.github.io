@@ -6,6 +6,11 @@ html {
             #6CF8FF 0%, 
             #ADFFD7 100%);
     min-height: 100vh;
+    font-family: "MainFont";
+}
+
+ul {
+    padding-left: 12px;
 }
 
 @font-face {
@@ -30,4 +35,9 @@ html {
     display: flex;
     flex-direction: row;
     justify-self: center;
+}
+
+.comment {
+    max-width: 220px;
+    color: #0008;
 }

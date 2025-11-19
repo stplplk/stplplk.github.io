@@ -1,0 +1,8 @@
+.status {
+    transition: filter 0.3s;
+    margin-right: 12px;
+}
+
+.status:hover {
+    filter: brightness(1.5);
+}

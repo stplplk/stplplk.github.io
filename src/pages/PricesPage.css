@@ -21,7 +21,7 @@
 .check-container {
     max-height: 10px;
     overflow: hidden;
-    animation: unroll 0.8s ease-out forwards;
+    animation: unroll 0.6s ease-in forwards;
 }
 
 .check::before {
