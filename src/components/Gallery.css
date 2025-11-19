@@ -1,0 +1,58 @@
+.gallery {
+    position: relative;
+    width: 76px;
+    height: 88px;
+    padding: 20px;
+}
+
+.gallery img {
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    object-fit: cover;
+    padding: 6px 6px 18px 6px;
+    background: white;
+    border-radius: 4px;
+    box-shadow: inset 2px 2px 8px -4px #0002,
+                      2px 2px 4px 2px #0004;
+    transition: transform .3s, left .3s, top .3s, box-shadow .3s;
+}
+
+.gallery img:nth-of-type(1) {
+    transform: rotate(-20deg);
+    left: 10px;
+}
+
+.gallery img:nth-of-type(2) {
+    transform: rotate(15deg);
+    top: 10px;
+    left: 30px;
+}
+
+.gallery img:nth-of-type(3) {
+    transform: rotate(3deg);
+}
+
+.gallery:hover img {
+    box-shadow: inset 2px 2px 8px -4px #0002,
+    2px 2px 8px 4px #0002;
+}
+
+.gallery:hover img:nth-of-type(1) {
+    transform: rotate(-10deg) scale(1.1);
+    left: -50px;
+}
+
+.gallery:hover img:nth-of-type(2) {
+    transform: rotate(10deg) scale(1.1);
+    left: 80px;
+}
+
+.gallery:hover img:nth-of-type(3) {
+    transform: rotate(0deg) scale(1.2);
+}
+
+.gallery:active img {
+    transform: scale(.9) !important;
+    top: 20px !important;
+}

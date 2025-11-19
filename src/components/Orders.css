@@ -1,12 +1,12 @@
-.price-button {
+.orders-button {
     transform: rotateZ(-5deg);
     transition: transform .3s;
 }
 
-.price-button:hover {
+.orders-button:hover {
     transform: rotateZ(15deg);
 }
 
-.price-button:active {
+.orders-button:active {
     transform: rotateZ(15deg) scale(.8);
 }

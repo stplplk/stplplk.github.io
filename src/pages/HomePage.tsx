@@ -1,7 +1,9 @@
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 import Badge from "../components/Badge";
 import Contact from "../components/Contact";
+import Orders from "../components/Orders";
 import Price from "../components/Price";
+import Gallery from "../components/Gallery";
 
 interface Contact {
     title: string;
@@ -27,8 +29,10 @@ function HomePage() {
                     />
                 )) }
             </div>
-            <div className="center">
+            <div className="center flex-row">
                 <Price />
+                <Orders />
+                <Gallery />
             </div>
         </div>
     )

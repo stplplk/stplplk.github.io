@@ -4,7 +4,7 @@ content:
   - name: arts
     label: "Арты"
     type: collection
-    path: "src/content/portfolio"
+    path: "src/content/gallery"
     filename: "{primary}.json"
     format: "json"
     view:
